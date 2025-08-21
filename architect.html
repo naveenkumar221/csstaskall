@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BR Architects</title>
+  <style>
+   
+    body {
+      font-family: 'Times New Roman', Times, serif;
+      margin: 0;
+      padding: 0;
+      background: white;
+      padding-top: 70px; 
+    }
+
+    h1, h2, h3 {
+      margin: 10px ;
+    }
+
+    .row {
+      font-size: 0; 
+    }
+
+    .col {
+      display: inline-block;
+      vertical-align: top;
+      width: 23%;   
+      margin: 1%;
+      font-size: 16px; }
+
+    img {
+      width: 100%;
+      border-radius: 5px;
+    }
+
+    
+    .nav {
+      position: fixed;      
+      top: 0;
+      left: 0;
+      width: 100%;
+      background:white;
+      padding: 15px 25px;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-size: 20px;
+      font-weight: bold;
+      display: inline-block;
+    }
+
+    .nav-links {
+      display: inline-block;
+      margin-left: 70%;
+    }
+
+    .nav a {
+      text-decoration: none;
+      color: #000;
+      margin-left: 20px;
+      font-weight: bold;
+    }
+    
+    .header {
+      position: relative;
+      margin: 1%;
+     
+    }
+
+    .header img {
+      width: 100%;
+      height: auto;
+      margin-left: 1%;
+    }
+
+    .header-text {
+      position: absolute;
+      top: 40%;
+      left: 40%;
+      color: white;`
+     
+    }
+
+    .header-text h1 {
+      font-size: 40px;
+      
+      
+    }
+
+    .box{
+      background: rgba(0,0,0,0.6);
+
+    }
+
+    .header-text .box {
+     
+      padding: 15px 10px;
+      
+    }
+
+    .container{
+        margin-left: 2%;
+        margin-bottom: 1%;
+    }
+
+    
+    .card {
+      position: relative;
+    }
+
+    .card img {
+      display: block;
+    }
+
+    .label {
+      position: absolute;
+      background: black;
+      color: white;
+      padding: 5px 10px;
+      font-size: 14px;
+      border-radius: 3px;
+      top: 0%;
+    }
+
+   
+    .team {
+      text-align: center;
+    }
+
+    .team img {
+      border-radius: 5px;
+    }
+
+    .role {
+      color: gray;
+      font-style: italic;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px;
+      margin-top: 10px;
+      width: 100%;
+      background: #333;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    form textarea {
+      height: 100px;
+      resize: none;
+    }
+
+    
+    .map img {
+      width: 100%;
+      /* display:block; */
+      margin: 1%;
+    }
+
+    
+    footer {
+      text-align: center;
+      background: black;
+      color: white;
+      padding: 15px;
+      margin-top: 20px;
+    }
+
+    footer a {
+      color: lightblue;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  
+  <div class="nav">
+    <div class="logo">BR Architects</div>
+    <div class="nav-links">
+      <a href="#">Projects</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </div>
+  </div>
+
+  
+  <div class="header">
+    <img src="https://www.w3schools.com/w3images/architect.jpg" alt="Architecture">
+    <div class="header-text">
+      <h1><span class="box">BR</span> Architects</h1>
+    </div>
+  </div>
+
+  
+  <div class="container">
+    <h2>Projects</h2>
+    <hr>
+    <div class="row">
+      <div class="col card">
+        <img src="https://www.w3schools.com/w3images/house5.jpg" alt="Project 1">
+        <div class="label">Summer House</div>
+      </div>
+      <div class="col card">
+        <img src="https://www.w3schools.com/w3images/house2.jpg" alt="Project 2">
+        <div class="label">Brick House</div>
+      </div>
+      <div class="col card">
+        <img src="https://www.w3schools.com/w3images/house3.jpg" alt="Project 3">
+        <div class="label">Renovated</div>
+      </div>
+      <div class="col card">
+        <img src="https://www.w3schools.com/w3images/house4.jpg" alt="Project 4">
+        <div class="label">Barn House</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col card">
+        <img src="https://www.w3schools.com/w3images/house2.jpg" alt="Project 1">
+        <div class="label">Summer House</div>
+      </div>
+      <div class="col card">
+        <img src="https://www.w3schools.com/w3images/house5.jpg" alt="Project 2">
+        <div class="label">Brick House</div>
+      </div>
+      <div class="col card">
+        <img src="https://www.w3schools.com/w3images/house4.jpg" alt="Project 3">
+        <div class="label">Renovated</div>
+      </div>
+      <div class="col card">
+        <img src="https://www.w3schools.com/w3images/house3.jpg" alt="Project 4">
+        <div class="label">Barn House</div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <h2>About</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+        laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, 
+        sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, 
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <div class="row">
+      <div class="col team">
+        <img src="https://www.w3schools.com/w3images/team2.jpg" alt="Team 1">
+        <h3>John Doe</h3>
+        <p class="role">CEO & Founder</p>
+        <p>Phasellus eget enim eu lectus faucibus vestibulum.</p>
+        <button class="btn">Contact</button>
+      </div>
+      <div class="col team">
+        <img src="https://www.w3schools.com/w3images/team1.jpg" alt="Team 2">
+        <h3>Jane Doe</h3>
+        <p class="role">Architect</p>
+        <p>Phasellus eget enim eu lectus faucibus vestibulum.</p>
+        <button class="btn">Contact</button>
+      </div>
+      <div class="col team">
+        <img src="https://www.w3schools.com/w3images/team3.jpg" alt="Team 2">
+        <h3>Mike Ross</h3>
+        <p class="role">Architect</p>
+        <p>Phasellus eget enim eu lectus faucibus vestibulum.</p>
+        <button class="btn">Contact</button>
+      </div>
+      <div class="col team">
+        <img src="https://www.w3schools.com/w3images/team4.jpg" alt="Team 2">
+        <h3>Dan Star</h3>
+        <p class="role">Architect</p>
+        <p>Phasellus eget enim eu lectus faucibus vestibulum.</p>
+        <button class="btn">Contact</button>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="container">
+    <h2>Contact</h2>
+    <form>
+      <input type="text" placeholder="Name">
+      <input type="email" placeholder="Email">
+      <input type="text" placeholder="Subject">
+      <textarea placeholder="Message"></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </div>
+
+  
+  <div class="map">
+    <img src="https://www.w3schools.com/w3images/map.jpg" alt="Map">
+  </div>
+
+  
+  <footer>
+    <p>Powered by <a href="#"> Naveen  </a></p>
+  </footer>
+
+</body>
+</html>
