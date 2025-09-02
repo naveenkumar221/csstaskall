@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            background-color: black;
+            
+
+            
+            
+        }
+        body{
+            text-align: center;
+            justify-items: center;
+            margin: 10%;
+        }
+
+        .disc img{
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            margin-top: 10%;
+            animation-name:move ;
+            animation-iteration-count: infinite;
+            animation-duration: 0.9s;
+            animation-timing-function: linear;
+            
+
+        }
+        
+        @keyframes move{
+        /* 0%{
+            transform: rotate(0deg);
+        }
+        50%{
+            transform: rotate(90deg);
+        }
+
+        75%{
+            transform: rotate(180deg);
+        }
+            */
+        100%{
+            transform: rotate(360deg);
+            }
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+    <div class="container">
+        <div class="disc">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmOP70XdrJlqjoXFjWrLVOI_UYoxDV5gqbFw&s" alt=""> 
+
+        </div> 
+        
+    </div>
+    
+</body>
+</html>
