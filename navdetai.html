@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding: 50px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .dropdown{
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropbutton{
+            background-color: green;
+            color: white;
+            cursor: pointer;
+        }
+
+        .dropdown-content{
+            display: none;
+            position: absolute;
+            background-color: red;
+            
+        }
+
+    .dropdown-content a {
+      color:white;
+      padding: 10px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: black;
+    }
+
+    
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+        
+
+
+    </style>
+</head>
+<body>
+    <div class="dropdown">
+        <button class="dropbutton"> Fruits </button>
+    <div class="dropdown-content">
+      <a href="#">Apple</a>
+      <a href="#">Banana</a>
+      <a href="#">Mango</a>
+    </div>
+
+
+    </div>
+</body>
+</html>
