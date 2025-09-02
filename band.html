@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Band</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Times New Roman', Times, serif;
+      line-height: 1.6;
+    }
+
+    /* Navbar */
+    .navbar {
+      background: black;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      margin: 0 12px;
+      font-weight: bold;
+    }
+
+    .navbar a:hover {
+      text-decoration: underline;
+    }
+
+    /* Details dropdown */
+    details {
+      position: relative;
+      display: inline-block;
+    }
+
+    details summary {
+      list-style: none;
+      cursor: pointer;
+      font-weight: bold;
+      color: white;
+    }
+
+    details[open] summary::after {
+      content: " ▲";
+      font-size: 12px;
+    }
+
+    details summary::after {
+      content: " ▼";
+      font-size: 12px;
+    }
+
+    details ul {
+      position: absolute;
+      background: black;
+      margin: 0;
+      padding: 8px 0;
+      list-style: none;
+      border-radius: 4px;
+      min-width: 120px;
+      display: none;
+    }
+
+    details[open] ul {
+      display: block;
+    }
+
+    details ul li {
+      padding: 6px 14px;
+    }
+
+    details ul li a {
+      color: white;
+      text-decoration: none;
+      display: block;
+    }
+
+    details ul li a:hover {
+      background: #444;
+    }
+
+    /* Hero Section */
+
+    .hero {
+      background: url("https://www.w3schools.com/w3images/la.jpg") repeat center center/cover;
+      height: 85vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      color: white;
+      text-align: center;
+      padding-bottom: 40px;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin: 0;
+    }
+
+    .hero p {
+      font-size: 20px;
+      margin-top: 10px;
+    }
+
+    /* Section Titles */
+
+    .section {
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .section h2 {
+      text-transform: uppercase;
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .section p {
+      color: #555;
+    }
+
+    /* Band Section */
+
+    .band-members {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 30px;
+      flex-wrap: wrap;
+    }
+
+    .member {
+      width: 200px;
+      text-align: center;
+    }
+
+    .member img {
+      width: 100%;
+      border-radius: 6px;
+    }
+
+    /* Tour Section */
+
+    .tour {
+      background: black;
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .tickets {
+      background: white;
+      color: black;
+      max-width: 600px;
+      margin: 20px auto;
+      text-align: left;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    .tickets li {
+      border-bottom: 1px solid #ddd;
+      padding: 10px 15px;
+    }
+
+    .tickets .sold-out {
+      background: red;
+      color: white;
+      padding: 2px 6px;
+      margin-left: 10px;
+      font-size: 12px;
+      border-radius: 3px;
+    }
+
+    .tickets .available {
+      float: right;
+      background: black;
+      color: white;
+      padding: 2px 6px;
+      border-radius: 3px;
+      font-size: 12px;
+    }
+
+    .tour-cards {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: white;
+      color: black;
+      width: 250px;
+      border-radius: 6px;
+      overflow: hidden;
+      text-align: left;
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card .info {
+      padding: 15px;
+    }
+
+    .card button {
+      background: black;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .card button:hover {
+      background: gray;
+    }
+
+    /* Contact Section */
+
+    .contact {
+      padding: 60px 20px;
+    }
+
+    .contact-container {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .contact-info {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    .contact-form {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    .contact-form input, 
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+    }
+
+    .contact-form button {
+      background: black;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+    }
+
+    .contact-form button:hover {
+      background: gray;
+    }
+
+    /* Footer */
+
+    .footer {
+      text-align: center;
+      padding: 20px;
+      background: #f1f1f1;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+                                        <!-- Navbar -->
+  <div class="navbar">
+    <div class="nav-left">
+      <a href="#">HOME</a>
+      <a href="#">BAND</a>
+      <a href="#">TOUR</a>
+      <a href="#">CONTACT</a>
+      <details>
+        <summary>MORE</summary>
+        <ul>
+          <li><a href="#">Merchandise</a></li>
+          <li><a href="#">Extras</a></li>
+          <li><a href="#">Media</a></li>
+        </ul>
+      </details>
+    </div>
+    <div class="nav-right">
+      <a href="#">🔍</a>
+    </div>
+  </div>
+
+                                   <!-- Hero Section -->
+  <div class="hero">
+    <h1>Los Angeles</h1>
+    <p>We had the best time playing at Venice Beach!</p>
+  </div>
+
+                                         <!-- Band Section -->
+  <div class="section">
+    <h2>The Band</h2>
+    <p><i>We love music</i></p>
+    <p> 
+    We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+    
+    
+    <div class="band-members">
+      <div class="member">
+        <p>Name 1</p>
+        <img src="https://www.w3schools.com/w3images/bandmember.jpg" alt="Member 1">
+      </div>
+      <div class="member">
+        <p>Name 2</p>
+        <img src="https://www.w3schools.com/w3images/bandmember.jpg" alt="Member 2">
+      </div>
+      <div class="member">
+        <p>Name 3</p>
+        <img src="https://www.w3schools.com/w3images/bandmember.jpg" alt="Member 3">
+      </div>
+    </div>
+  </div>
+
+                                            <!-- Tour Section -->
+  <div class="tour">
+    <h2>Tour Dates</h2>
+    <p><i>Remember to book your tickets!</i></p>
+
+    <ul class="tickets">
+      <li>September <span class="sold-out">Sold out</span></li>
+      <li>October <span class="sold-out">Sold out</span></li>
+      <li>November <span class="available">3</span></li>
+    </ul>
+
+    <div class="tour-cards">
+      <div class="card">
+        <img src="https://www.w3schools.com/w3images/newyork.jpg" alt="New York">
+        <div class="info">
+          <h4>New York</h4>
+          <p>Fri 27 Nov 2016</p>
+          <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+          <button>Buy Tickets</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://www.w3schools.com/w3images/paris.jpg" alt="Paris">
+        <div class="info">
+          <h4>Paris</h4>
+          <p>Sat 28 Nov 2016</p>
+          <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+          <button>Buy Tickets</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://www.w3schools.com/w3images/sanfran.jpg" alt="San Francisco">
+        <div class="info">
+          <h4>San Francisco</h4>
+          <p>Sun 29 Nov 2016</p>
+          <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+          <button>Buy Tickets</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+                                                <!-- Contact Section -->
+  <div class="contact section">
+    <h2>Contact</h2>
+    <p><i>Fan? Drop a note!</i></p>
+
+    <div class="contact-container">
+      <div class="contact-info">
+        <p><b>Chicago, US</b></p>
+        <p>📞 Phone: +91 9704570356</p>
+        <p>✉️ Email: naveennaughty160@mail.com</p>
+      </div>
+      <div class="contact-form">
+        <form>
+          <input type="text" placeholder="Name" required>
+          <input type="email" placeholder="Email" required>
+          <textarea placeholder="Message" rows="5" required></textarea>
+          <button type="submit">SEND</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>Powered by Naveen</p>
+  </div>
+
+</body>
+</html>
