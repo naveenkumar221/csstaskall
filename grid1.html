@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: linear-gradient(to bottom, #5ab0f7, #b366f7);
+    }
+
+    .main {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      width: 85%;
+      max-width: 1000px;
+      border: 2px solid black;
+    }
+
+
+      .child1,.child2,.child3,.child4,.child5,.child6,.child7,.child8,.child9{
+        height: 30vh;
+        width: 33vh;
+        margin: 5px;
+        background-color:rosybrown;
+        
+        border: 2px solid black;
+      }
+
+      .child1{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap:20px;
+
+      }
+      
+
+      .a,.b,.c{
+        background-color:white;
+        
+        margin: 10%;
+
+      }
+
+      .child2{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 10px;
+      }
+
+      .a1{
+          background-color: white;
+          grid-column: 1/3;
+          grid-row: 1/3;
+          margin: 5%;
+         
+      }
+
+      .b2{
+        background-color:white;
+        grid-column: 3/5;
+       margin: 5%;
+        
+      }
+
+      .c3{
+        background-color:white;
+        grid-column: 3/5;
+        margin: 5%;
+        
+      }
+
+      .child3{
+                display: grid;
+               
+             
+                grid-template-columns: repeat(3, 1fr);
+                gap: 10px;
+            }
+            .a4{
+                background-color:white;
+                margin: 5%;
+                
+            }
+            .b5{
+                background-color: white;
+                margin: 5%;
+            }
+            .c6{
+                background-color: white;
+                margin: 5%;
+            }
+            .d7{
+                background-color:white;
+                margin: 5%;
+            }
+            .e8{
+                background-color: white;
+                margin: 5%;
+            }
+            .f9{
+                background-color:white;
+                margin: 5%;
+            }
+
+
+       .child4{
+           
+            display: grid;
+            gap: 10px;
+            grid-template-columns: repeat(6,1fr);
+        }
+        .a10{
+            background-color: white;
+            grid-row: 1/3;
+            grid-column: 1/3; 
+            margin: 5%;   
+        }
+        .b11{
+            background-color: white;
+            grid-row: 3/6;  
+            grid-column: 1/3; 
+            margin: 5%;       
+        }
+        .c12{
+            background-color: white;
+            grid-row: 1/5;
+            grid-column: 3/5;
+            margin: 5%;   
+        }
+        .d13{
+            background-color: white;
+            grid-row: 5/6;
+            grid-column: 3/5;
+            margin: 5%;   
+        }
+        .e14{
+            background-color: white;
+            grid-row: 1/3;
+            grid-column: 5/7;
+            margin: 5%;   
+        }
+        .f15{
+            background-color: white;
+            grid-row: 3/6;
+            grid-column: 5/7;
+            margin: 5%;   
+        }
+
+
+
+      .child5{
+          display: grid;
+          grid-template-columns: repeat(5,1fr);
+          gap: 10px;
+        }
+        .a16{
+            background-color:white;
+            grid-column: 1/4;
+            margin: 5%;   
+        }
+       .b17{
+            background-color:white;
+            grid-column: 4/7;
+            margin: 5%;   
+        }
+        .c18{
+            background-color:white;
+            grid-column: 1/3;
+            margin: 5%;   
+        }
+        .d19{
+            background-color:white;
+            grid-column: 3/5;
+            margin: 5%;   
+        }
+        .e20{
+            background-color:white;
+            grid-column: 5/7;
+            margin: 5%;   
+        }
+
+
+         .child6{
+            display: grid;
+            grid-template-columns: repeat(6,1fr);
+            gap: 10px;
+        }
+        .a21{
+            background-color: white;
+            grid-row: 1/5;
+            grid-column: 1/5;
+            margin: 5%;   
+        }
+        .b22{
+            background-color: white;
+            grid-row: 5/6;
+            grid-column: 1/3;
+            margin: 5%;   
+        }
+        .c23{
+           background-color: white;
+           grid-column: 3/5 ;
+           margin: 5%;   
+        }
+        .d24{
+                background-color: white;
+                grid-row: 1/2;
+                grid-column: 5/7;
+                margin: 5%;                 
+        }
+        .e25{
+            background-color: white;
+            grid-row: 2/5;
+            grid-column: 5/7;
+            margin: 5%;   
+        }
+        .f26{
+            background-color: white;
+            grid-column: 5/7;
+            margin: 5%;   
+        }
+
+
+      .child7{
+            display: grid;
+            grid-template-columns: repeat(7,1fr);
+            gap: 10px;
+        }
+        .a27{
+            background-color: white;
+            grid-row: 1/5;
+            grid-column: 1/4;
+            margin: 5%;   
+        }
+        .b28{
+            background-color: white;
+            grid-column: 4/8;
+            grid-row: 1/3;
+            margin: 5%;   
+        }
+        .c29{
+            background-color: white;
+            grid-row: 3/4;
+            grid-column: 4/6;
+            margin: 5%;   
+        }
+        .d30{
+            background-color: white;
+            grid-row: 4/5;
+            grid-column: 4/6;
+            margin: 5%;   
+        }
+        .e31{
+            background-color: white;
+            grid-row:3/5;
+            grid-column: 6/8;
+            margin: 5%;   
+        }
+
+
+        .child8{
+            display: grid;
+            grid-template-columns: repeat(6,1fr);
+            gap: 10px;
+        }
+        .a32{
+            background-color: white;
+            grid-row: 1/6;
+            grid-column: 1/4;
+            margin: 5%;  
+        }
+        .b33{
+            background-color: white;
+            grid-row: 1/4;
+            grid-column: 4/6;
+            margin: 8%;  
+        }
+        .c34{
+            background-color:white;
+            grid-row: 4/6;
+            margin: 8%;  
+        }
+        .d35{
+            background-color: white;
+            grid-row: 4/6;
+            margin: 8%;  
+        }
+        .e36{
+            background-color: white;
+            grid-row: 1/3;
+            margin: 10%;  
+        }
+        .f37{
+            background-color: white;
+            grid-row: 3/3;
+            margin: 10%;  
+        }
+        .g38{
+           background-color: white;
+            grid-row: 4/6;
+            margin: 10%;  
+        }
+
+      .child9{
+
+           display: grid;
+           grid-template-columns: repeat(8,1fr);
+           gap: 10px;
+        }
+        .a39{
+            background-color: white;
+            grid-row: 1/2;
+            grid-column: 1/3;
+             margin: 8%;  
+        }
+        .b40{
+            background-color: white;
+            grid-column: 3/5;
+            margin: 8%;  
+        }
+        .c41{
+            background-color: white;
+            grid-column: 5/7;
+             margin: 8%;  
+        }
+        .d42{
+            background-color: white;
+            grid-column: 7/9; 
+             margin: 8%;             
+        }
+        .e43{
+            background-color: white;
+            grid-column:1/5 ;
+             margin: 5%;  
+        }
+        .f44{
+            background-color: white;
+            grid-column: 5/9;
+             margin: 5%;  
+        }
+        .g45{
+            background-color: white;
+          grid-column: 1/3;
+           margin: 8%;  
+        }
+        .h46{
+            background-color: white;
+            grid-column: 3/5;
+             margin: 8%;  
+        }
+        .i47{
+            background-color: white;
+            grid-column: 5/7;
+             margin: 8%;  
+        }
+        .j48{
+            background-color: white;
+            grid-column: 7/9;
+             margin: 8%;  
+        }
+
+/*         
+        @media (max-width: 425px)
+        {
+    .main{
+                width: 100%;
+                height: 100vh;
+            }
+         .parent1,.parent2,.parent3,.parent4,.parent5,.parent6,.parent7,.parent8,.parent9{
+            width: 35%;
+            height: 13vh;
+         }
+
+      } */
+
+            
+
+      
+
+    </style>
+</head>
+<body>
+
+  <div class="main">
+
+     <!-- 1st one  -->
+
+      <div class="child1">
+        <div class="a"></div>
+        <div class="b"></div>
+        <div class="c"></div>
+
+      </div>
+      
+      <!-- 2nd one  -->
+
+      <div class="child2">
+        <div class="a1"></div>
+        <div class="b2"></div>
+        <div class="c3"></div>
+        
+      </div>
+
+         <!-- 3rd one  -->
+
+      <div class="child3">
+        <div class="a4"></div>
+        <div class="b5"></div>
+        <div class="c6"></div>
+        <div class="d7"></div>
+        <div class="e8"></div>
+        <div class="f9"></div>
+
+      </div>
+
+         <!-- 4th one  -->
+
+      <div class="child4">
+        <div class="a10"></div>
+        <div class="b11"></div>
+        <div class="c12"></div>
+        <div class="d13"></div>
+        <div class="e14"></div>
+        <div class="f15"></div>
+
+      </div>
+
+        <!-- 5th one  -->
+
+      <div class="child5">
+        <div class="a16"></div>
+        <div class="b17"></div>
+        <div class="c18"></div>
+        <div class="d19"></div>
+        <div class="e20"></div>
+
+      </div>
+
+        <!-- 6th one  -->
+
+      <div class="child6">
+        <div class="a21"></div>
+        <div class="b22"></div>
+        <div class="c23"></div>
+        <div class="d24"></div>
+        <div class="e25"></div>
+        <div class="f26"></div>
+
+      </div>
+
+         <!-- 7th one  -->
+
+      <div class="child7">
+        <div class="a27"></div>
+        <div class="b28"></div>
+        <div class="c29"></div>
+        <div class="d30"></div>
+        <div class="e31"></div>
+
+      </div>
+
+          <!-- 8th one  -->
+
+      <div class="child8">
+        <div class="a32"></div>
+        <div class="b33"></div>
+        <div class="c34"></div>
+        <div class="d35"></div>
+        <div class="e36"></div>
+        <div class="f37"></div>
+        <div class="g38"></div>
+
+      </div>
+
+           <!-- 9th one  -->
+
+      <div class="child9">
+        <div class="a39"></div>
+        <div class="b40"></div>
+        <div class="c41"></div>
+        <div class="d42"></div>
+        <div class="e43"></div>
+        <div class="f44"></div>
+        <div class="g45"></div>
+        <div class="h46"></div>
+        <div class="i47"></div>
+        <div class="j48"></div>
+
+      </div>
+
+  </div>
+   
+     
+
+    
+</body>
+</html>
