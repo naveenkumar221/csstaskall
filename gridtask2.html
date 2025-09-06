@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            display: grid;
+            grid-template-areas: 
+            'img1 img2 img3 img4'
+            'img1 img2 img3 img4'
+            'img1 img6 img7 img4'
+            'img5 img6 img7 img8'
+            'img5 img6 img11 img8'
+            'img9 img10 img11 img13'
+            'img9 img10 img12 img13';
+            height: 100vh;
+            width: 100vh;
+            place-content: center;
+            margin-left: 300px;
+
+        }
+        .img1{
+            grid-area: img1;
+        }
+        .img2{
+            grid-area: img2;
+        }
+        .img3{
+            grid-area: img3;
+        }
+        .img4{
+            grid-area: img4;
+            
+        }
+        .img5{
+            grid-area: img5;
+        }
+        .img6{
+            grid-area: img6;
+        }
+        .img7{
+            grid-area: img7;
+        }
+        .img8{
+            grid-area: img8;
+        }
+        .img9{
+            grid-area: img9;
+        }
+        .img10{
+            grid-area: img10;
+        }
+        .img11{
+            grid-area: img11;
+        }
+        .img12{
+            grid-area: img12;
+        }.img13{
+            grid-area: img13;
+        }
+        .parent img{
+            height: 100%;
+            width: 100%;
+            border: 5px solid red;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh2yYFZQK6fYO0ZzfAPQ-fYKW3ZcnsplbEIA&s" alt="" class="img1">
+        <img src="https://cdn.shopify.com/s/files/1/0086/0795/7054/files/Rottweiler.jpg?v=1645180019" alt="" class="img2">
+        <img src="https://www.pedigree.com.ph/media/2024-09/American%20bully%20-%20mobile06.png?VersionId=I_hHCHqkuZILPuRG9SbIGVS2toVHLHag" alt="" class="img3">
+        <img src="https://www.pedigree.com.ph/media/2023-11/large_6fe6796b-f2e3-4221-8f22-194eb0afc348_0.jpg?VersionId=CqNjtcOTkRRMs_F11Hcaetwz8xdfuHxQ" alt="" class="img4">
+        <img src="https://cdn.shopify.com/s/files/1/0086/0795/7054/files/German_Shepherd.jpg?v=1752050958" alt="" class="img5">
+        <img src="https://cdn.shopify.com/s/files/1/0086/0795/7054/files/Beagle_1.jpg?v=1645179197" alt="" class="img6">
+        <img src="https://cdn.shopify.com/s/files/1/0086/0795/7054/files/Shih-Tzus_1.jpg?v=1645180171" alt="" class="img7">
+        <img src="https://cdn.shopify.com/s/files/1/0086/0795/7054/files/cocker_spaniel_1.jpg?v=1645179256" alt="" class="img8">
+        <img src="https://cdn.shopify.com/s/files/1/0086/0795/7054/files/Pug.jpg?v=1645179665" alt="" class="img9">
+        <img src="https://cdn.shopify.com/s/files/1/0086/0795/7054/files/Doberman_1.jpg?v=1645179873" alt="" class="img10">
+        <img src="https://cdn.shopify.com/s/files/1/0086/0795/7054/files/Poodle.jpg?v=1645180105" alt="" class="img11">
+        <img src="https://cdn.shopify.com/s/files/1/0086/0795/7054/files/Chow_Chow_Dog_Breed_Nutrition.jpg?v=1736225769" alt="" class="img12">
+        <img src="https://cdn.shopify.com/s/files/1/0086/0795/7054/files/bull-mastiff.jpg?v=1752064232" alt="" class="img13">
+    </div>
+    
+</body>
+</html>
